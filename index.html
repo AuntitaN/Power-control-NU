@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ระบบควบคุมการจำกัดกำลังไฟฟ้า</title>
-  <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet" />
+  <!-- เปลี่ยนมาใช้ Sarabun แทน Mitr -->
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -22,46 +23,54 @@
 
   <main class="container">
 
+    <!-- Intro -->
     <section class="intro-section">
       <h2>รายละเอียดโครงงาน</h2>
       <p>
         โครงงานนี้นำเสนอการออกแบบระบบควบคุมการจำกัดกำลังการผลิตไฟฟ้าจากระบบเซลล์แสงอาทิตย์
         ผู้ใช้งานสามารถควบคุมการลดกำลังผลิตไฟฟ้าได้ผ่านแอปพลิเคชันบนโทรศัพท์
         ชุดทดสอบประกอบด้วยอินเวอร์เตอร์ขนาด 1500 วัตต์ และแผงเซลล์แสงอาทิตย์ขนาด 2000 วัตต์
-        ทำการทดสอบปรับลดกำลังไฟฟ้าใน 3 ระดับคือ ร้อยละ 0, 30 และ 60
+        ทำการทดสอบปรับลดกำลังไฟฟ้าใน 3 ระดับคือ ร้อยละ&nbsp;0, ร้อยละ&nbsp;30 และ ร้อยละ&nbsp;60
       </p>
     </section>
 
+    <!-- Results -->
     <section class="result-section">
       <h2>ผลการทดสอบระบบ</h2>
 
-      <div class="video-card fade-in">
+      <div class="video-card">
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/hr4bA5IIKcM?si=B8lWIqAe3-VwOGw3" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="description">
-          <h3>การปรับลดกำลังไฟฟ้าร้อยละ 0</h3>
-          <p>ทำการสั่งลดกำลังผลิตจาก 400 W เหลือ 70 W เวลา 14.08 น. แม้ตั้งลดเป็น 0% แต่เนื่องจากข้อจำกัดของอินเวอร์เตอร์และสภาพอากาศแปรปรวน จึงยังมีการผลิตไฟฟ้าเหลือเล็กน้อยในช่วงลดกำลัง</p>
+          <h3>การปรับลดกำลังไฟฟ้าร้อยละ&nbsp;0</h3>
+          <p>
+            ทำการสั่งลดกำลังผลิตจาก 400 W เหลือ 70 W เวลา 14.08 น. แม้ตั้งลดเป็น 0 % แต่เนื่องจากข้อจำกัดของอินเวอร์เตอร์และสภาพอากาศแปรปรวน จึงยังมีการผลิตไฟฟ้าเหลือเล็กน้อยในช่วงลดกำลัง
+          </p>
         </div>
       </div>
 
-      <div class="video-card fade-in">
+      <div class="video-card">
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/zF5RxygmS1U?si=aZopIiVj8x2ZlJvw" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="description">
-          <h3>การปรับลดกำลังไฟฟ้าร้อยละ 30</h3>
-          <p>สั่งลดกำลังผลิตจาก 1320 W เหลือ 500 W เวลา 14.32 น. สภาพอากาศมีความแปรปรวนสูง ความเข้มแสงเปลี่ยนแปลงเร็ว อินเวอร์เตอร์ปรับกำลังตามแสงที่เปลี่ยน ส่งผลให้มีความคลาดเคลื่อนเล็กน้อยในการอ่านค่า</p>
+          <h3>การปรับลดกำลังไฟฟ้าร้อยละ&nbsp;30</h3>
+          <p>
+            สั่งลดกำลังผลิตจาก 1320 W เหลือ 500 W เวลา 14.32 น. สภาพอากาศมีความแปรปรวนสูง ความเข้มแสงเปลี่ยนแปลงเร็ว อินเวอร์เตอร์ปรับกำลังตามแสงที่เปลี่ยน ส่งผลให้มีความคลาดเคลื่อนเล็กน้อยในการอ่านค่า
+          </p>
         </div>
       </div>
 
-      <div class="video-card fade-in">
+      <div class="video-card">
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/BhEsFRXamHM?si=d-oN6m3u8OVeWkFX" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="description">
-          <h3>การปรับลดกำลังไฟฟ้าร้อยละ 60</h3>
-          <p>สั่งลดกำลังผลิตจาก 1600 W เหลือ 960 W เวลา 14.32 น. แม้ค่าที่ควรได้คือ 900 W แต่เนื่องจากความเข้มแสงเปลี่ยนแปลงอย่างรวดเร็ว อินเวอร์เตอร์จึงปรับค่ากำลังตามความเหมาะสม ทำให้เกิดความคลาดเคลื่อนจากค่าที่คำนวณไว้เล็กน้อย</p>
+          <h3>การปรับลดกำลังไฟฟ้าร้อยละ&nbsp;60</h3>
+          <p>
+            สั่งลดกำลังผลิตจาก 1600 W เหลือ 960 W เวลา 14.32 น. แม้ค่าที่ควรได้คือ 900 W แต่เนื่องจากความเข้มแสงเปลี่ยนแปลงอย่างรวดเร็ว อินเวอร์เตอร์จึงปรับค่ากำลังตามความเหมาะสม ทำให้เกิดความคลาดเคลื่อนจากค่าที่คำนวณไว้เล็กน้อย
+          </p>
         </div>
       </div>
 
@@ -69,6 +78,7 @@
 
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <p>คณะวิศวกรรมศาสตร์ สาขาวิศวกรรมไฟฟ้า มหาวิทยาลัยนเรศวร</p>
   </footer>
